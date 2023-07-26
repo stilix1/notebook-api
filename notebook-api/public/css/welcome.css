@@ -1,0 +1,25 @@
+body {
+    background-color: #9ca3af;
+}
+
+.container {
+    width: 100%;
+}
+
+.container ul {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.container li {
+    border: 1px solid;
+    border-radius: 15px;
+    background-color: #95999c;
+}
+
+.container h1 {
+    text-align: center;
+}
