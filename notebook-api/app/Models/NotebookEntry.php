@@ -18,7 +18,6 @@ use Illuminate\Database\Eloquent\Model;
  *     @OA\Property(property="photo", type="string", format="url", example="https://test.com/photo.jpg"),
  * )
  */
-
 class NotebookEntry extends Model
 {
     use HasFactory;
@@ -26,4 +25,9 @@ class NotebookEntry extends Model
     protected $table = 'notebook_entries';
 
     protected $fillable = ['full_name', 'company', 'phone', 'email', 'birthdate', 'photo'];
+
+    public static function paginate(int $perPage)
+    {
+        return NotebookEntry::query()->paginate($perPage);
+    }
 }

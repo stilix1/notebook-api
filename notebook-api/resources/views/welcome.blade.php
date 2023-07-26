@@ -21,7 +21,7 @@
 
                 </ul>
                 <ul>
-                    <strong>Email:</strong> {{ $entry['email'] }}<br>
+                    <strong>Email:</strong> {{ $entry['email'] }}
                 </ul>
                 <ul>
                     <strong>Дата рождения:</strong> {{ $entry['birthdate'] ?  : 'Нет данных' }}
@@ -31,6 +31,9 @@
                 </ul>
             </li>
         @endforeach
+        <li class="pagination">
+            {{ $entries->links() }}
+        </li>
     </ul>
 </div>
 </body>

@@ -23,3 +23,7 @@ body {
 .container h1 {
     text-align: center;
 }
+
+svg {
+    width: 25px;
+}

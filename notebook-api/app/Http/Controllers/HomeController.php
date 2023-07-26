@@ -3,14 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Models\NotebookEntry;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Http;
 
 class HomeController extends Controller
 {
     public function index()
     {
-        $entries = NotebookEntry::all();
+        $perPage = 3; // Количество элементов на странице
+        $entries = NotebookEntry::paginate($perPage);
         return view('welcome', ['entries' => $entries]);
     }
 }
