@@ -3,9 +3,6 @@
     "info": {
         "title": "NotebookAPI",
         "description": "L5 Swagger OpenApi description",
-        "contact": {
-            "email": "test@test.com"
-        },
         "license": {
             "name": "Apache 2.0",
             "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
@@ -13,7 +10,7 @@
         "version": "1.0.0"
     },
     "paths": {
-        "/notebook": {
+        "/api/notebook": {
             "get": {
                 "tags": [
                     "Notebook"

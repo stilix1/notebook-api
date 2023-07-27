@@ -10,7 +10,7 @@ class NotebookController extends Controller
 {
     /**
      * @OA\Get(
-     *      path="/notebook",
+     *      path="/api/notebook",
      *      operationId="getNotebookEntries",
      *      tags={"Notebook"},
      *      summary="Получить список записей в записной книжке",
